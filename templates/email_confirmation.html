@@ -1,0 +1,17 @@
+{% autoescape off %}
+
+Welcome to GFG - Django Login!!
+Hello {{ name }}!!
+Please confirm your email by clicking on the following link.
+
+Confirmation Link: http://{{ domain }}{% url 'activate' uidb64=uid token=token %}
+
+{% endautoescape %}
+<!-- 
+ echo "# loginSystem" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/kaustav0703/loginSystem.git
+git push -u origin main -->
